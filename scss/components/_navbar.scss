@@ -1,0 +1,41 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.header {
+  @include flex(space-between);
+padding: 1rem 5rem;
+  &__logo {
+    width: 75px;
+    height: 75px;
+  }
+  i {
+    display: none;
+  }
+  &__links {
+    @include flex(space-between);
+    gap: 0.5rem;
+    list-style-type: none;
+    padding: 0.5rem 0px;
+
+    &--home {
+      color: $headerColor;
+      border: none;
+      background-color: $mainColor;
+      //   font-family: Inter;
+      //   font-weight: 500;
+      //   font-size: 1rem;
+      //   line-height: 19px;
+      @include setFont(Inter, 500, 1rem, 19px);
+    }
+    &--disabled {
+      color: #b8becd;
+      @extend .header__links--home;
+    }
+    &--login {
+      @include btn(1.3rem, 0.3rem, $btnBorderColor, $mainColor);
+    }
+    &--register {
+      @include btn(1.3rem, 0.3rem, $mainColor, $btnBorderColor);
+    }
+  }
+}

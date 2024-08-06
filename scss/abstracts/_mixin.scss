@@ -1,0 +1,41 @@
+@use "./variables" as *;
+
+@mixin flex($jc, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin setFont($ff, $fw, $fs, $lh) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin btn($px, $py, $color, $bg) {
+  border: 1px solid $btnBorderColor;
+  color: $color;
+  background-color: $bg;
+  border-radius: 10px;
+  padding-inline: $px; // x
+  padding-block: $py; // y
+  @include setFont("Inter", 500, 1rem, auto);
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@mixin media-xs {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media-sm {
+  @media only screen and (min-width: 501px) and (max-width: 769px) {
+    @content;
+  }
+}
+
+

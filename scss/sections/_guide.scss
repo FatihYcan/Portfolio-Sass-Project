@@ -1,0 +1,33 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.guide {
+  @include flex(center);
+  margin: 2rem 3rem;
+  min-height: 40vh;
+  &__image {
+    height: 500px;
+    width: 50%;
+    background-image: url(../../assets/image3.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__text {
+    width: 47%;
+    margin: auto;
+    padding-bottom: 1rem;
+    h2 {
+      @include setFont("Playfair Display", 700, 32px, 50px);
+      color: $hColor;
+    }
+    p {
+      @include setFont("Mulish", 300, 18px, 30px);
+      color: $fontColor;
+      margin-bottom: 1rem;
+    }
+    &--button {
+      @include btn(5rem, 0.3rem, $mainColor, $btnBorderColor);
+    }
+  }
+}

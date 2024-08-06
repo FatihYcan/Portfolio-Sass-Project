@@ -1,0 +1,54 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.home {
+  @include flex(center);
+  margin: 1rem 3rem;
+  &__image {
+    height: 500px;
+    width: 50%;
+    background-image: url(../../assets/image1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &__form {
+    width: 47%;
+    margin: auto;
+    padding-bottom: 1rem;
+    h2 {
+      @include setFont("Playfair Display", 700, 64px, 75px);
+      color: $hColor;
+    }
+    h3 {
+      @include setFont("Inter", 600, 1.4rem, 27px);
+      color: $hColor;
+      margin: 1rem 0;
+    }
+    hr {
+      width: 2rem;
+      border: 1px solid;
+    }
+    form {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      width: 100%;
+      margin-bottom: 1rem;
+      select {
+        margin: auto;
+        width: 48%;
+        padding: 0.5rem;
+        border-radius: 8x;
+        color: $fontColor;
+        @include setFont("Inter", 400, 1rem, auto);
+        border: 1px solid $fontColor;
+      }
+    }
+    &--button {
+      @include btn(1.3rem, 0.3rem, $mainColor, $btnBorderColor);
+    }
+  }
+}

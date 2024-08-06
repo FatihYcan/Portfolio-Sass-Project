@@ -1,0 +1,28 @@
+// @import "./abstracts/variables";
+// @use "./abstracts/variables" as *;
+
+@use "./abstracts/variables" as v;
+@use "./base/reset";
+@use "./components/navbar";
+@use "./components/footer";
+@use "./sections/home";
+@use "./sections/about";
+@use "./sections/destination";
+@use "./sections/guide";
+@use "./components/responsive";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mulish&family=Playfair+Display&family=Rampart+One&display=swap");
+
+body {
+  // background-color: $mainColor;
+  // background-color: $mainColor;
+  background-color: v.$mainColor;
+}
+
+button,
+i {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}

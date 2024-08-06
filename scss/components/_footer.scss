@@ -1,0 +1,15 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.footer {
+  @include flex(center);
+  height: 10vh;
+  &__icons i {
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 1s;
+    &:hover {
+      color: $btnColor;
+    }
+  }
+}
