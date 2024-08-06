@@ -1,15 +1,14 @@
 @use "../abstracts/mixin" as *;
 @use "../abstracts/variables" as *;
 
-
 .home {
   @include flex(center);
   margin: 1rem 3rem;
   &__image {
     height: 500px;
     width: 50%;
-    background-image: url("../../assets/image1.jpg");
-     background-position: center;
+    background-image: url("https://img.freepik.com/premium-vector/tourist-with-backpack-map-travel-adventure-vector-illustration_1142-112576.jpg?w=740");
+    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
   }
