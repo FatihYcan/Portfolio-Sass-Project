@@ -1,6 +1,7 @@
 @use "../abstracts/mixin" as *;
 @use "../abstracts/variables" as *;
 
+
 .home {
   @include flex(center);
   margin: 1rem 3rem;
