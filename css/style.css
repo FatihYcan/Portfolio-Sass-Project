@@ -94,7 +94,7 @@
 .home__image {
   height: 500px;
   width: 50%;
-  background-image: url("/assets/image1.png");
+  background-image: url("../../assets/image1.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -170,7 +170,7 @@
 .about__image {
   height: 500px;
   width: 50%;
-  background-image: url("/assets/image2.png");
+  background-image: url("../../assets/image2.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -293,7 +293,7 @@
 .guide__image {
   height: 500px;
   width: 50%;
-  background-image: url("/assets/image3.png");
+  background-image: url("../../assets/image3.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
