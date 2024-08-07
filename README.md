@@ -24,7 +24,6 @@ Portfolio-Sass-Project, çeşitli seyahat destinasyonlarını sergilemek ve ilgi
 - **JavaScript:** Etkileşimli özellikler için (varsa).
 - **Font Awesome:** Simgeler için.
 
-
-
+https://github.com/user-attachments/assets/3b9053b0-939e-4290-970a-567fa30ae758
 
 [Canlı Demo'yu Deneyin](https://portfolio-build-sass-project.netlify.app/)
